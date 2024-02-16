@@ -1,0 +1,550 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: (100%, 1200px);
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+a,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-style {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+  border: 1px solid #d9d9d9;
+  padding: 12px 16px;
+}
+
+/* Define the keyframe animation */
+@keyframes scaleAndColorChange {
+  0% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #ff4c38;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+}
+
+/* Style for the button */
+.animation-button {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+/* Apply the animation on hover */
+.animation-button:hover {
+  animation: scaleAndColorChange 1s infinite;
+}
+
+.margin-left {
+  margin-left: 15px;
+}
+
+.pri-color {
+  background-color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flexbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flexbox > * {
+  flex: 1;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* heaqder */
+header {
+  padding: 20px 0px;
+}
+
+/* navbar brand container */
+.navbar-brand {
+  width: 100%;
+  max-width: 150px;
+}
+
+/* logo inside an div container  */
+.navbar-brand img {
+  max-width: 100%;
+}
+
+/* navbar link container */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav a {
+  padding: 5px;
+}
+
+/* section */
+.hero-section {
+  padding: 100px auto;
+}
+
+.left-div {
+  margin-right: 100px;
+}
+
+.hero-desc {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.hero-desc strong {
+  color: #bb2a23;
+  font-size: 1.5rem;
+  text-decoration: 3px underline;
+}
+
+.hero-section small {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  margin-top: 15px;
+  color: #141416;
+}
+
+/* Project Highlight - Section */
+.pro-highlight {
+  padding: 100px 0px;
+}
+
+/* section > h1 */
+
+/* right div inside of flexbox */
+.pro-highlight .right {
+  margin-left: 100px;
+  height: auto;
+}
+
+.pro-highlight .right div {
+  padding: 10px 0;
+}
+
+.pro-highlight .right img {
+  display: inline-block;
+}
+
+.pro-highlight .right p {
+  display: inline-block;
+  font-size: 1.125rem;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.pro-highlight .right div:nth-child(8) {
+  margin-bottom: 30px;
+}
+
+/* Location advantages Section */
+
+.location {
+  padding: 0px 0px 100px;
+}
+
+.location p,
+.location img {
+  display: inline-block;
+}
+
+.location .left P {
+  font-size: 1rem;
+  margin: 0px;
+  margin-left: 2rem;
+}
+
+.location .left div:nth-child(8) {
+  margin-bottom: 20px;
+}
+
+.location .left div {
+  display: flex;
+  padding: 10px 0;
+}
+.location .right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.location .right img {
+  width: 100%;
+  max-width: 500px;
+}
+/* Amenities Section */
+
+.amenities {
+  padding: 100px 0;
+}
+
+.amenities-container {
+  width: min(100%, 1200px);
+  padding: 0;
+}
+
+.amenities .flexbox div {
+  border: 1px solid #d9d9d9;
+  text-align: center;
+  flex: 1 1 21%;
+  margin: 10px;
+}
+
+.amenities h2 {
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.amenities .flexbox div img {
+  width: min(90%, 80px);
+  margin: 0px auto;
+}
+
+.floor-plans {
+  padding: 120px 0;
+}
+
+.floor-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.floor-flexbox > div {
+  flex-grow: 1;
+  width: 30%;
+  margin: 10px;
+  border: 1px solid #d9d9d9;
+}
+
+.floor-flexbox > div h2 {
+  font-size: 1.125rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  padding: 5px 15px;
+}
+
+/* Masterplan section */
+.masterplan {
+  padding: 40px 0px 100px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.payment-plan {
+  padding: 100px 0 0;
+}
+
+footer img {
+  width: 250px;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+.small-container {
+  background-color: #141416;
+  color: #fff;
+  padding: 20px 10px;
+}
+.small-container small {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn-wrapper {
+  padding: 40px 10px;
+}
+
+/* phone screen */
+@media (max-width: 480px) {
+  .pro-highlight {
+    padding: 0px;
+    padding: 60px 0;
+  }
+  .flexbox {
+    flex-direction: column-reverse;
+  }
+  .navbar-nav {
+    margin: 15px auto;
+  }
+  .container {
+    width: min(90%, 450px);
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .pro-highlight img,
+  .location .right img {
+    max-width: 80%;
+  }
+  .hero-section img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .hero-section h1 {
+    /* padding-top: 20px; */
+    text-align: center;
+  }
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .left-div {
+    margin-right: 0;
+  }
+
+  .floor-plans {
+    padding: 0px;
+  }
+
+  .pro-highlight .flexbox {
+    flex-direction: column;
+  }
+  .pro-highlight .right {
+    margin-left: 0;
+  }
+
+  .pro-highlight .right p {
+    font-size: 1rem;
+  }
+  .pro-highlight .right {
+    padding-bottom: 60px;
+  }
+  .pro-highlight .right div {
+    display: flex;
+  }
+  .amenities {
+    padding: 0;
+  }
+  .payment-plan img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .small-container {
+    padding: 10ppx 0;
+  }
+
+  footer img {
+    width: 200px;
+    margin: auto;
+    padding: 30px 0px;
+  }
+  .floor-flexbox {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .floor-flexbox > * {
+    flex: 1;
+  }
+  .floor-flexbox > div {
+    width: 100%;
+  }
+}
+
+/* modal
+ */
+/* form */
+
+form img {
+  margin-bottom: 30px;
+}
+
+.box {
+  width: min(100%, 500px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title {
+  color: #141416;
+}
+.box h3 {
+  font-size: 2rem;
+  margin: 15px;
+  color: #141416;
+}
+
+.box .name,
+.phone {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.box .name input,
+.box .phone input {
+  width: 100%;
+  padding: 20px 32px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeee;
+  margin-bottom: 15px;
+}
+
+.box .name input::placeholder {
+  color: #bbb;
+  font-weight: 500;
+}
+
+.box .btn {
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f88602;
+  color: #fff;
+  padding: 20px 32px;
+}
+
+.box .btn:hover {
+  color: #fff;
+}
+
+.modal .container {
+  position: relative;
+}
+
+.message {
+  width: 100%;
+  position: absolute;
+  top: -20%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message .success {
+  font-size: 1.25rem;
+  color: green;
+  background-color: #caffe2ea;
+  padding: 20px 32px;
+  display: none;
+}
+
+.message .danger {
+  font-size: 1.25rem;
+  color: #000;
+  padding: 20px 32px;
+  animation: buttons 0.5s linear;
+  background-color: #ff4b4bf6;
+  display: none;
+  margin-top: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.label {
+  padding: 5px;
+  background-color: #f44336;
+  max-width: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 10px;
+}
+
+.label {
+  animation: scaleAndColorChange 1s infinite;
+}
+
+.hero-container {
+  position: relative;
+}
+.what-logo {
+  max-width: 150px;
+  position: absolute;
+  bottom: -10%;
+  right: 0%;
+}
+
+@media (max-width: 440px) {
+  .what-logo {
+    bottom: 80%;
+    right: -10%;
+    max-width: 100px;
+  }
+}
+
+.project-btn {
+  animation: scaleAndColorChange 1s infinite;
+}
+
+.animation {
+  animation: scaleAndColorChange 1s infinite;
+}
